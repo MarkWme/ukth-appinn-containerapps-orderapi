@@ -53,12 +53,12 @@ Let's start by setting some variables that we will use for creating Azure resour
 ```bash
 # Generate a random name
 
-name=ca-$(cat /dev/urandom | tr -dc '[:lower:]' | fold -w ${1:-5} | head -n 1)
+name=crgar-contapps-demo1
 
 # Set variables for the rest of the demo
 
 resourceGroup=${name}-rg
-location=northeurope
+location=westeurope
 containerAppEnv=${name}-env
 logAnalytics=${name}-la
 appInsights=${name}-ai
