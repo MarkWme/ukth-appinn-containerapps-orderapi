@@ -44,7 +44,7 @@ namespace QueueWorker
 
                         if (message == null)
                         {
-                            await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+                            await Task.Delay(TimeSpan.FromSeconds(6), stoppingToken);
                             continue;
                         }
 
